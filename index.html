@@ -29,6 +29,12 @@
     <link rel="stylesheet" href="assets/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
   </head>
 
   <body>
@@ -36,10 +42,10 @@
         <h1 id="logo">GUCCI</h1>
     </div> -->
     <div class="header small d-flex justify-content-around align-items-center">
-      <div class="contact"><i class="fa-solid fa-plus mr-2"></i>Contact Us</div>
+      <div class="contact" id="contactUsLink"><i class="fa-solid fa-plus mr-2"></i>Contact Us</div>
 
       <div id="logo" class="logoPlace">
-        <a href="/" class="logotext">LYCIA</a>
+        <a href="#" id="logoLink" class="logotext">LYCIA</a>
       </div>
 
       <div class="menu-icon d-flex" onclick="openMenu()">
@@ -47,7 +53,7 @@
       </div>
     </div>
     <!-- slide -->
-    <div class="swiper-container">
+    <div class="swiper-container" id="home">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="video-wrapper">
@@ -59,7 +65,7 @@
             ></iframe>
           </div>
         </div>
-        <div class="swiper-slide">
+        <!-- <div class="swiper-slide">
           <video
             autoplay
             muted
@@ -89,44 +95,43 @@
           "
         >
           Slide 2
-        </div>
+        </div> -->
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
     </div>
     <!-- <div class="w-100 slide"></div> -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img
-            class="animate__animated"
-            src="https://media.gucci.com/dynamic/b3c8/AQG2Z_69CVm3DAJO4tXO7JeYv0YtpAurXkIHDp+fFsZCe1t32+KQvMG+QutpF1_HLf778hVCuAYHByjyR9wGJ8T6guAoA7NlM3TP2lyWg7fgXWSzE5dKpqInMcZb_Fkd1gD+R046c3ezH_baIsUiMb3LbKoaxBxK_jE9rcj9D8RDzss07nl5_IR+_ttQ_jUIozpIHST+0I+Jb+Gf+lGLhQhL2XBTLZGQtP2l5qcMrIPIL++oq1gM8Uh3IU5+kYmONYhuFWcgPjRFOFk5DSIxqzag3r_cffphYbh1XKGBwv7sIXHgFcgSgnCsTT0PmYzXt9VIwg7VuE9mlCg1S1JtMeHumwK_YjSZWXDRHJ_Y5q4=/HP_Portrait_Gucci-Lido-Apr24-ASE-240207_0005-4395-FULL-sRGB_001_Default.png"
-            alt=""
-          />
-          <div class="title animate__animated" style="">
-            <div class="content">Başlık</div>
-            <a href="" class="card-link">Link Butonu</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <img
-            class="animate__animated"
-            src="https://media.gucci.com/dynamic/b3c8/AQG2Z_69CVm3DAJO4tXO7JeYv0YtpAurXkIHDp+fFsZCe1t32+KQvMG+QutpF1_HLf778hVCuAYHByjyR9wGJ8T6guAoA7NlM3TP2lyWg7fgXWSzE5dKpqInMcZb_Fkd1gD+R046c3ezH_baIsUiMb3LbKoaxBxK_jE9rcj9D8RDzss07nl5_IR+_ttQ_jUIozpIHST+0I+Jb+Gf+lGLhQhL2XBTLZGQtP2l5qcMrIPIL++oq1gM8Uh3IU5+kYmONYhuFWcgPjRFOFk5DSIxqzag3r_cffphYbh1XKGBwv7sIXHgFcgSgnCsTT0PmYzXt9VIwg7VuE9mlCg1S1JtMeHumwK_YjSZWXDRHJ_Y5q4=/HP_Portrait_Gucci-Lido-Apr24-ASE-240207_0005-4395-FULL-sRGB_001_Default.png"
-            alt=""
-          />
-          <div class="title animate__animated" style="">
-            <div class="content">Başlık</div>
-            <a href="" class="card-link">Link Butonu</a>
-          </div>
+<section id="thumb" class="sptb bg-white">
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-sm-12 d-flex justify-content-center mb-4 mb-md-0">
+      <div class="position-relative">
+        <img class="animate__animated animate__zoomIn img-fluid" src="assets/img/lycia-girl.jpg" alt="" style="visibility: visible;">
+        <div class="title animate__animated animate__zoomIn position-absolute bottom-0 start-0 w-100" style="visibility: visible;">
+          <div class="content">Başlık</div>
+          <!-- <a href="" class="card-link">Link Butonu</a> -->
         </div>
       </div>
     </div>
-
-    <div class="container">
+    <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="position-relative">
+        <img class="animate__animated animate__zoomIn img-fluid" src="assets/img/lycia-girl.jpg" alt="" style="visibility: visible;">
+        <div class="title animate__animated animate__zoomIn position-absolute bottom-0 start-0 w-100" style="visibility: visible;">
+          <div class="content">Başlık</div>
+          <!-- <a href="" class="card-link">Link Butonu</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    
+    </div>
+<section id="about" class="sptb bg-white">
+<div class="container">
       <div class="row">
         <div class="col-md-12 text-dark text-center">
-          <h2>Deneme Başlık</h2>
+          <h2>About us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             laborum quisquam similique. Quam, a expedita aspernatur mollitia
@@ -139,7 +144,7 @@
           <div class="col-md-6 col-sm-12">
             <img
               class="animate__animated"
-              src="https://media.gucci.com/dynamic/b3c8/AQG2Z_69CVm3DAJO4tXO7JeYv0YtpAurXkIHDp+fFsZCe1t32+KQvMG+QutpF1_HLf778hVCuAYHByjyR9wGJ8T6guAoA7NlM3TP2lyWg7fgXWSzE5dKpqInMcZb_Fkd1gD+R046c3ezH_baIsUiMb3LbKoaxBxK_jE9rcj9D8RDzss07nl5_IR+_ttQ_jUIozpIHST+0I+Jb+Gf+lGLhQhL2XBTLZGQtP2l5qcMrIPIL++oq1gM8Uh3IU5+kYmONYhuFWcgPjRFOFk5DSIxqzag3r_cffphYbh1XKGBwv7sIXHgFcgSgnCsTT0PmYzXt9VIwg7VuE9mlCg1S1JtMeHumwK_YjSZWXDRHJ_Y5q4=/HP_Portrait_Gucci-Lido-Apr24-ASE-240207_0005-4395-FULL-sRGB_001_Default.png"
+              src="assets/img/lycia-boat.jpg"
               alt=""
             />
           </div>
@@ -161,83 +166,153 @@
         </div>
       </div>
     </div>
+</section>
+    
 
     <!--Section-->
-    <section class="sptb bg-white">
-      <div class="container">
-        <div class="owl-carousel owl-theme">
+<section id="gallery" class="sptb bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-dark text-center">
+        <h2>Galeri</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          laborum quisquam similique. Quam, a expedita aspernatur mollitia
+          illum officiis accusantium. Sint suscipit blanditiis odio eligendi
+          odit ex vero. Vel, pariatur.
+        </p>
+        <hr />
+      </div>
+      <div class="owl-carousel owl-theme">
+        <a href="assets/gallery/gallery-1.jpg" data-fancybox="gallery">
           <img
             class="owl-lazy"
-            data-src="https://placehold.it/350x450&text=1"
-            data-src-retina="https://placehold.it/350x250&text=1-retina"
+            data-src="assets/gallery/gallery-1_thumb.jpg"
+            data-src-retina="assets/gallery/gallery-1_thumb.jpg"
             alt=""
           />
+        </a>
+        <a href="assets/gallery/gallery-2.jpg" data-fancybox="gallery">
           <img
             class="owl-lazy"
-            data-src="https://placehold.it/350x650&text=2"
-            data-src-retina="https://placehold.it/350x250&text=2-retina"
+            data-src="assets/gallery/gallery-2_thumb.jpg"
+            data-src-retina="assets/gallery/gallery-2_thumb.jpg"
             alt=""
           />
-          <picture>
-            <source
-              class="owl-lazy"
-              media="(min-width: 650px)"
-              data-srcset="https://placehold.it/350x250&text=3-large"
-            />
-            <source
-              class="owl-lazy"
-              media="(min-width: 350px)"
-              data-srcset="https://placehold.it/350x250&text=3-medium"
-            />
-            <img
-              class="owl-lazy"
-              data-src="https://placehold.it/350x250&text=3-fallback"
-              alt=""
-            />
-          </picture>
+        </a>
+        <a href="assets/gallery/gallery-3.jpg" data-fancybox="gallery">
           <img
             class="owl-lazy"
-            data-src="https://placehold.it/350x250&text=4"
+            data-src="assets/gallery/gallery-3_thumb.jpg"
+            data-src-retina="assets/gallery/gallery-3_thumb.jpg"
             alt=""
           />
+        </a>
+        <a href="assets/gallery/gallery-4.jpg" data-fancybox="gallery">
           <img
             class="owl-lazy"
-            data-src="https://placehold.it/350x250&text=5"
+            data-src="assets/gallery/gallery-4_thumb.jpg"
+            data-src-retina="assets/gallery/gallery-4_thumb.jpg"
             alt=""
           />
+        </a>
+        <a href="assets/gallery/gallery-5.jpg" data-fancybox="gallery">
           <img
             class="owl-lazy"
-            data-src="https://placehold.it/350x250&text=6"
+            data-src="assets/gallery/gallery-5_thumb.jpg"
+            data-src-retina="assets/gallery/gallery-5_thumb.jpg"
             alt=""
           />
-          <img
-            class="owl-lazy"
-            data-src="https://placehold.it/350x250&text=7"
-            alt=""
-          />
-          <img
-            class="owl-lazy"
-            data-src="https://placehold.it/350x250&text=8"
-            alt=""
-          />
-          <img
-            class="owl-lazy"
-            data-src="https://placehold.it/350x400&text=9"
-            alt=""
-          />
-          <img
-            class="owl-lazy"
-            data-src="https://placehold.it/350x400&text=10"
-            alt=""
-          />
-          <img
-            class="owl-lazy"
-            data-src="https://placehold.it/350x450&text=11"
-            alt=""
-          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sptb bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mb-5">
+        <h2>İletişim</h2>
+        <p>Bizimle iletişime geçmek için aşağıdaki formu kullanabilirsiniz.</p>
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <form id="contactForm" class="bg-dark">
+          <div class="form-group">
+            <label for="name">İsim</label>
+            <input type="text" class="form-control" id="name" name="name" required="">
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" class="form-control" id="email" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="subject">Konu</label>
+            <input type="text" class="form-control" id="subject" name="subject" required="">
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+      </div>
+      <div class="col-md-3 d-flex align-items-center"><div class="col-md-12 text-center">
+        <h4 class="mb-4">İletişim Bilgileri</h4>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Kalkan, Turkey</p>
+        <p><i class="fas fa-phone mr-2"></i> +90 123 456 7890</p>
+        <p><i class="fas fa-envelope mr-2"></i> info@lyciayachting.com</p>
+        <div class="mt-4">
+          <h5>Bizi Takip Edin</h5>
+          <div class="social-icons mt-3">
+            <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0 text-dark text-center">
+        <h5 class="mb-3">LYCIA Yachting</h5>
+        <p>Discover the beautiful bays and beaches of Kalkan with us. Founded in 2020 by the Tanc brothers, Sevket &amp; Nusret.</p>
+        <div class="social-icons mt-3">
+          <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </section>
+      <div class="col-md-6 mb-4 mb-md-0 text-dark text-center">
+        <h5 class="mb-3">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt mr-2"></i> Kalkan, Turkey</li>
+          <li><i class="fas fa-phone mr-2"></i> +90 123 456 7890</li>
+          <li><i class="fas fa-envelope mr-2"></i> info@lyciayachting.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="#" class="text-dark mr-3">Copyright® Lycia Boat - 2024</a>
+        <a href="#" class="text-dark">Tasarım: Arya Web Tasarım</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <!-- Yan Menü -->
     <div id="side-menu" class="side-menu">
@@ -246,22 +321,20 @@
       </div>
       <nav>
         <ul class="list-unstyled">
-          <li><a href="#">Ana Sayfa</a></li>
-          <li><a href="#">Kadın</a></li>
-          <li><a href="#">Erkek</a></li>
-          <li><a href="#">Çocuk</a></li>
-          <li><a href="#">Aksesuarlar</a></li>
-          <li><a href="#">Satış</a></li>
+          <li><a href="#home" class="menu-link">Ana Sayfa</a></li>
+          <li><a href="#about" class="menu-link">Hakkımızda</a></li>
+          <li><a href="#gallery" class="menu-link">Galeri</a></li>
+          <li><a href="#contact" class="menu-link">İletişim</a></li>
         </ul>
       </nav>
     </div>
     <div class="backside"></div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
     <!-- owl -->
     <script src="assets/owl.carousel.min.js"></script>
 
@@ -361,6 +434,68 @@
           autoplayHoverPause: true,
         });
       });
+    </script>
+
+    <!-- Form -->
+     <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Burada form verilerini işleyebilir ve bir API'ye gönderebilirsiniz
+      alert('Form başarıyla gönderildi!');
+      this.reset();
+    });
+
+
+    //contact us butonu dinleyici
+    document.addEventListener('DOMContentLoaded', function() {
+  var contactUsLink = document.getElementById('contactUsLink');
+  var contactSection = document.getElementById('contact');
+
+  contactUsLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    contactSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+//menü buton dinleyici
+    document.addEventListener('DOMContentLoaded', function() {
+  var menuLinks = document.querySelectorAll('.menu-link');
+  
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetId = this.getAttribute('href');
+      var targetSection = document.querySelector(targetId);
+      
+      if(targetSection) {
+        closeMenu();
+        setTimeout(function() {
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }, 300); // Menünün kapanması için biraz bekleyin
+      }
+    });
+  });
+
+  var logoLink = document.getElementById('logoLink');
+  
+  logoLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+function closeMenu() {
+  document.getElementById("side-menu").classList.remove("open");
+  document.querySelector("body").style.overflow = "auto";
+}
     </script>
   </body>
 </html>
